@@ -23,7 +23,7 @@ def main():
         col1.write('Đang đọc dữ liệu...')
 
         try:
-            df = pd.read_excel(uploaded_file).head(100)   # TEST
+            df = pd.read_excel(uploaded_file)
         except Exception as e:
             col1.error(f'Lỗi đọc file: {e}')
 
